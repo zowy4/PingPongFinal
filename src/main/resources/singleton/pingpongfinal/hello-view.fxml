@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<BorderPane prefHeight="395.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="singleton.pingpongfinal.PongController">
+  <top>
+    <HBox alignment="CENTER" spacing="20" BorderPane.alignment="CENTER">
+      <children>
+        <Label fx:id="scoreLeft" style="-fx-font-size: 24;" text="0" />
+        <Label style="-fx-font-size: 24;" text=" : " />
+        <Label fx:id="scoreRight" style="-fx-font-size: 24;" text="0" />
+      </children>
+    </HBox>
+  </top>
+  <center>
+    <Pane fx:id="gamePane" prefHeight="421.0" prefWidth="599.0" BorderPane.alignment="CENTER">
+      <children>
+        <Circle fx:id="ball" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+        <Rectangle fx:id="paddleLeft" height="100.0" layoutX="15.0" stroke="BLACK" strokeWidth="2.0" width="20.0" />
+        <Rectangle fx:id="paddleRight" height="100.0" layoutX="588.0" stroke="BLACK" strokeWidth="2.0" width="20.0" />
+        <Line endX="300.0" layoutX="309.0" startX="-300.0" />
+        <Line endX="300.0" layoutX="306.0" layoutY="348.0" startX="-300.0" />
+      </children>
+    </Pane>
+  </center>
+</BorderPane>
